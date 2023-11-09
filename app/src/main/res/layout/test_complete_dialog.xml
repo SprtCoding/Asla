@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/complete_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                app:lottie_rawRes="@raw/dancing"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Completed"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/blanka"
+                android:letterSpacing=".1"/>
+
+            <TextView
+                android:id="@+id/total_score"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:fontFamily="@font/retropix"
+                android:letterSpacing=".1"/>
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You are Amazing!"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/retropix"
+                android:letterSpacing=".1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_marginTop="15dp"
+                app:cornerRadius="25dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="Ok"
+                android:backgroundTint="@color/green"
+                android:id="@+id/ok_btn"
+                android:fontFamily="@font/retropix"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

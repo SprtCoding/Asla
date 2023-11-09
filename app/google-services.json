@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047810943544",
+    "project_id": "asla-893ac",
+    "storage_bucket": "asla-893ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047810943544:android:a56da5b79d22a7231454cd",
+        "android_client_info": {
+          "package_name": "com.sprtcoding.asla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047810943544-kh5iahfchq9q1cfibqkh8cs61jv5kmjo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFfoCE2I5M4CbYhylVEBk0GDLqNeJc-Jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047810943544-kh5iahfchq9q1cfibqkh8cs61jv5kmjo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

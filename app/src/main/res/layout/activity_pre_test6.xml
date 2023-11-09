@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".Menu.ModuleLessons.Lesson6.PreTest6">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/blanka"
+        android:letterSpacing=".2"
+        android:text="Pre-Test"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/item_no"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/category_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/retropix"
+        android:letterSpacing=".2"
+        android:text="Item 1/15"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/item_no"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center"
+            android:background="@drawable/question_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/retropix"
+            android:letterSpacing=".2"
+            android:text="Item 1/15"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/option_1"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/question_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/retropix"
+            android:letterSpacing=".2"
+            android:text="Option 1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/option_2"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/retropix"
+            android:letterSpacing=".2"
+            android:text="Option 2"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/option_3"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/question_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/retropix"
+            android:letterSpacing=".2"
+            android:text="Option 3"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/previous_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/arrowhead"
+                android:rotation="180"
+                />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/next_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/arrowhead"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

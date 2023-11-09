@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Asla"
+        tools:targetApi="31">
+        <activity
+            android:name=".Menu.Glossary"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson7.PostTest7"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson7.Lesson_7"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson7.PreTest7"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson6.PostTest6"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson6.Lesson_6"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson6.PreTest6"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson5.PostTest5"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson5.Lesson_5"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson5.PreTest5"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson4.PostTest4"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson4.Lesson_4"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson4.PreTest4"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson3.PostTest3"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson3.Lesson_3"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson3.PreTest3"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson2.PostTest2"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson2.Lesson_2"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson2.PreTest2"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson7.Lesson_7_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson6.Lesson_6_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson5.Lesson_5_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson4.Lesson_4_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson3.Lesson_3_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson2.Lesson_2_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson1.PostTest1"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson1.PreTest1"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson1.Lesson_1_PreTest"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson1.Lesson_1"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Introduction"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.HardCategory.FixMePlay2"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.HardCategory.FixMePlay"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.HardCategory.FixMe"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson15"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson14"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson13"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson12"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson11"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson10"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson9"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson8"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson7"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson6"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson5"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson4"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson3"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson2"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModuleLessons.Lesson1"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.Modules"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModerateCategory.GuessMePlay"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.ModerateCategory.GuessMe"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.EasyCategory.ReviewMePlay"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.EasyCategory.ReviewMe"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.Assessment"
+            android:exported="false" />
+        <activity
+            android:name=".Menu.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Sounds.MusicService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

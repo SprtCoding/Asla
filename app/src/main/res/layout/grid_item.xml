@@ -1,0 +1,28 @@
+<!-- res/layout/grid_item.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:layout_toEndOf="@id/radioButton"
+        android:layout_alignTop="@id/radioButton"
+        android:layout_marginTop="15dp"
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/option_1_img"/>
+</RelativeLayout>

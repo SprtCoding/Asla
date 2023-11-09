@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".Menu.ModerateCategory.GuessMePlay">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/blanka"
+        android:letterSpacing=".2"
+        android:text="Guess Me"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/item_no"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/category_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/retropix"
+        android:letterSpacing=".2"
+        android:text="Item 1/15"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <io.github.kbiakov.codeview.CodeView
+        android:layout_below="@id/item_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/code_view"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp" />
+
+    <GridView
+        android:layout_below="@id/code_view"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="120dp"
+        android:numColumns="3"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridView"
+        android:text="Long press the image to view Bigger"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/blanka"
+        android:textStyle="italic"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/gridView"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/previous_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/arrowhead"
+            android:rotation="180"
+            />
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/next_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/arrowhead"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

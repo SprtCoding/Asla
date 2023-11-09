@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/dark_blue"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analyze"
+            android:textColor="@color/white"
+            android:fontFamily="@font/blanka"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pre-Test score is"
+            android:textColor="@color/white"
+            android:fontFamily="@font/retropix"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/pre_score"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/15"
+            android:textColor="@color/white"
+            android:fontFamily="@font/retropix"
+            android:textSize="52sp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post-Test score is"
+            android:textColor="@color/white"
+            android:fontFamily="@font/retropix"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/post_score"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/15"
+            android:textColor="@color/white"
+            android:fontFamily="@font/retropix"
+            android:textSize="52sp"/>
+
+        <TextView
+            android:id="@+id/analyze_msg"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="congrats"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/retropix"
+            android:textSize="32sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="40dp"
+            android:id="@+id/done_btn"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/blanka"
+            android:textSize="18sp"
+            app:cornerRadius="35dp"
+            android:backgroundTint="#23BE87"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

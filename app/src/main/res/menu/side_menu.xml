@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/nav_overview"
+        android:icon="@drawable/overview"
+        android:title="Overview"/>
+
+    <item
+        android:id="@+id/nav_resources"
+        android:icon="@drawable/resources"
+        android:title="Resources"/>
+
+    <item
+        android:id="@+id/nav_developer"
+        android:icon="@drawable/developer"
+        android:title="Developers"/>
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/feedback"
+        android:title="Feedback"/>
+</menu>

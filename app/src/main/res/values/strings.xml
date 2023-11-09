@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Asla</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="error_solutions"><![CDATA[Error & Solutions]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview_txt">ASLA, the Android Studio Learning Application, is a mobile learning application designed to help aspiring beginners to take their first step to be Android Application developers, as this application will help them to have the knowledge and skills to create their very first Android Application to high-quality Android applications.</string>
+    <string name="how_to_play">\?</string>
+    <string name="an_android_app_project">An Android app project begins with an idea and a definition of the requirements necessary to realize that idea. As the project progresses, it goes through design, development, and testing</string>
+    <string name="the_above">The above diagram is a high-level picture of the development process, with the following steps:</string>
+    <string name="android_studio_provides">Android Studio provides tools for the testing, and publishing phases of the development process, and a unified development environment for creating apps for all Android devices. The development environment includes code templates with sample code for common app features, extensive testing tools and frameworks, and a flexible build system.</string>
+    <string name="when_choosing_target">When choosing Target Android Devices, Phone and Tablet are selected by default, as shown in the figure below. The choice shown in the figure for the Minimum SDK — API 15: Android 4.0.3 (IceCreamSandwich) — makes your app compatible with 97% of Android devices active on the Google Play Store.</string>
+    <string name="different_devices_run">Different devices run different versions of the Android system, such as Android 4.0.3 or Android 4.4. Each successive version often adds new APIs not available in the previous version. To indicate which set of APIs are available, each version specifies an API level. For instance, Android 1.0 is API level 1 and Android 4.0.3 is API level 15. \n\nThe Minimum SDK declares the minimum Android version for your app. Each successive version of Android provides compatibility for apps that were built using the APIs from previous versions, so your app should always be compatible with future versions of Android while using the documented Android APIs.</string>
+    <string name="android_studio_pre">Android Studio pre-populates your project with minimal code for an activity and a screen layout based on a template. A variety of templates are available, ranging from a virtually blank template (Add No Activity) to various types of activities. You can customize the activity after choosing your template. For example, the Empty Activity template provides a single activity accompanied by a single layout resource for the screen. You can choose to accept the commonly used name for the activity (such as MainActivity) or change the name on the Customize the Activity screen. Also, if you use the Empty Activity template, be sure to check the following if they are not already checked:</string>
+    <string name="android_layout_width_match_parent">\t\t\t\t\tandroid:layout_width=\"match_parent\"</string>
+    <string name="layout_height">\t\t\t\t\tandroid:layout_height=\"wrap_content\"</string>
+    <string name="vertical">=\"vertical\"</string>
+    <string name="t_t_t_t_tandroid_layout_below_id_orderintrotext"><![CDATA[\t\t\t\t\tandroid:layout_below=\"@id/orderintrotext\">]]></string>
+    <string name="radiobutton_android_id_id_sameday_android_layout_width_wrap_content_android_layout_height_wrap_content_android_text_string_same_day_messenger_service"><![CDATA[\t\t\t\t\t<RadioButton\n \t\t\t\t\tandroid:id=\"@+id/sameday\"\n\t\t\t\t\tandroid:layout_width=\"wrap_content\"\n\t\t\t\t\tandroid:layout_height=\"wrap_content\"\n\t\t\t\t\tandroid:text=\"@string/same_day_messenger_service\"]]></string>
+    <string name="t_t_t_t_tandroid_onclick">\t\t\t\t\tandroid:onClick=\"</string>
+    <string name="close_tag"><![CDATA[\"/>]]></string>
+    <string name="radiobutton_android_id_id_nextday"><![CDATA[\t\t\t\t\t<RadioButton\n\t\t\t\t\tandroid:id=\"@+id/nextday\"]]></string>
+    <string name="android_layout_width">\t\t\t\t\tandroid:layout_width=\"</string>
+    <string name="double_quote">\"</string>
+    <string name="android_layout_height_wrap_content_android"><![CDATA[\t\t\t\t\tandroid:layout_height=\"wrap_content\"\n\t\t\t\t\tandroid:text=\"@string/\nnext_day_ground_delivery\"\n\t\t\t\t\tandroid:onClick=\"onRadioButtonClicked\"/>]]></string>
+    <string name="radiobutton_android_id_id_pickup"><![CDATA[\t\t\t\t\t<RadioButton\n\t\t\t\t\tandroid:id=\"@+id/pickup\"]]></string>
+    <string name="wrap_content">=\"wrap_content\"</string>
+    <string name="android_layout_onradiobuttonclicked"><![CDATA[\t\t\t\t\tandroid:layout_height=\"wrap_content\"\n\t\t\t\t\tandroid:text=\"@string/pick_up\"\n\t\t\t\t\tandroid:onClick=\"onRadioButtonClicked\"/>]]></string>
+    <string name="start"><![CDATA[<]]></string>
+    <string name="radiogroup"><![CDATA[</RadioGroup>]]></string>
+</resources>
