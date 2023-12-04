@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.ModuleLessons.Lesson2;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -26,6 +28,10 @@ public class Lesson_2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lesson2);
         _init();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         // Load a PDF file from assets folder (change the file path as needed)
         pdfView.fromAsset("lesson_2.pdf")

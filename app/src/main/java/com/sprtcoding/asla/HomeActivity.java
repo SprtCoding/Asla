@@ -33,7 +33,7 @@ import com.sprtcoding.asla.Sounds.MusicService;
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     private ImageView _volume;
-    private MusicService musicService;
+    public static MusicService musicService;
     private boolean isMusicBound = false;
     private ServiceConnection musicConnection;
     private ClickSoundUtils clickSoundUtils;
@@ -74,7 +74,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         //exit alert dialog
         exitAlertBuilder = new AlertDialog.Builder(this);
 
-        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+        navigationView.setNavigationItemSelectedListener(this);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav, R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);

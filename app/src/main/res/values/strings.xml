@@ -15,7 +15,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="overview_txt">ASLA, the Android Studio Learning Application, is a mobile learning application designed to help aspiring beginners to take their first step to be Android Application developers, as this application will help them to have the knowledge and skills to create their very first Android Application to high-quality Android applications.</string>
-    <string name="how_to_play">\?</string>
+    <string name="how_to_play">Help</string>
     <string name="an_android_app_project">An Android app project begins with an idea and a definition of the requirements necessary to realize that idea. As the project progresses, it goes through design, development, and testing</string>
     <string name="the_above">The above diagram is a high-level picture of the development process, with the following steps:</string>
     <string name="android_studio_provides">Android Studio provides tools for the testing, and publishing phases of the development process, and a unified development environment for creating apps for all Android devices. The development environment includes code templates with sample code for common app features, extensive testing tools and frameworks, and a flexible build system.</string>

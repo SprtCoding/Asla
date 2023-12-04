@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.ModerateCategory;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -43,10 +45,10 @@ import io.github.kbiakov.codeview.highlight.Font;
 public class GuessMePlay extends AppCompatActivity {
     private CodeView codeView;
     private ImageView next_btn, previous_btn;
-    private LottieAnimationView anim;
-    private MaterialButton _ok_btn;
+    LottieAnimationView anim;
+    MaterialButton _ok_btn;
     private GridView gridView;
-    private TextView item_no,total_score,score_text;
+    TextView item_no,total_score,score_text;
     private ClickSoundUtils clickSoundUtils;
     private boolean isTestCompleted = false;
     private final List<ModerateOptionsModel> moderateOptionsModels = new ArrayList<>();
@@ -56,8 +58,8 @@ public class GuessMePlay extends AppCompatActivity {
     private FailSound failSound;
     public static List<Integer> selectedAnswers = new ArrayList<>();
     public static int score = 0, currentItemNo, totalItemNo, selected_option = 0, answer = 0;
-    private int[] imageIds_1, imageIds_2, imageIds_3, imageIds_4, imageIds_5, imageIds_6, imageIds_7
-            , imageIds_8, imageIds_9, imageIds_10;
+    int[] imageIds_1, imageIds_2, imageIds_3, imageIds_4, imageIds_5, imageIds_6, imageIds_7
+            , imageIds_8, imageIds_9;
     private String code_q_1, code_q_2, code_q_3, code_q_4, code_q_5, code_q_6, code_q_7, code_q_8
             , code_q_9, code_q_10;
 
@@ -67,6 +69,10 @@ public class GuessMePlay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guess_me_play);
         init();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         clickSoundUtils = new ClickSoundUtils(this);
         happySound = new HappySound(this);
@@ -123,6 +129,8 @@ public class GuessMePlay extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void showNextQuestion() {
         if(currentItemNo < totalItemNo) {
+            selected_option = 0;
+            isTestCompleted = false;
             currentQuestion = moderateQuestionsModels.get(currentItemNo);
             // Set code content
             codeView.setCode(currentQuestion.getQuestion());
@@ -137,22 +145,22 @@ public class GuessMePlay extends AppCompatActivity {
 
             // Replace these image resource IDs with your own images
             if(currentItemNo == 0) {
-                imageIds_1 = new int[]{R.drawable.option_1, R.drawable.option_2, R.drawable.option_3};
+                imageIds_1 = new int[]{R.drawable.alert_dialog, R.drawable.radio_button, R.drawable.toggle_button};
 
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_1, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
             }else if(currentItemNo == 1) {
-                imageIds_2 = new int[]{R.drawable.option_2, R.drawable.option_3, R.drawable.option_1};
+                imageIds_2 = new int[]{R.drawable.radio_button, R.drawable.spelling_checker, R.drawable.media_player};
 
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_2, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
             }else if(currentItemNo == 2) {
-                imageIds_3 = new int[]{R.drawable.option_2, R.drawable.option_1, R.drawable.option_3};
+                imageIds_3 = new int[]{R.drawable.radio_button, R.drawable.alert_dialog, R.drawable.toggle_button};
 
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_3, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
             }else if(currentItemNo == 3) {
-                imageIds_4 = new int[]{R.drawable.navigation, R.drawable.tab_layout, R.drawable.toogle_button};
+                imageIds_4 = new int[]{R.drawable.navigation, R.drawable.tab_layout, R.drawable.toggle_button};
 
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_4, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
@@ -162,7 +170,7 @@ public class GuessMePlay extends AppCompatActivity {
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_5, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
             }else if(currentItemNo == 5) {
-                imageIds_6 = new int[]{R.drawable.audio_recording, R.drawable.navigation, R.drawable.clipboard};
+                imageIds_6 = new int[]{R.drawable.audio_recording, R.drawable.media_player, R.drawable.bluetooth};
 
                 OptionAdapter adapter = new OptionAdapter(this, imageIds_6, moderateQuestionsModels);
                 gridView.setAdapter(adapter);
@@ -439,11 +447,12 @@ public class GuessMePlay extends AppCompatActivity {
         }else if (selected_option == answer) {
             if(!isTestCompleted) {
                 score++;
-                previous_btn.setVisibility(View.VISIBLE);
+                //previous_btn.setVisibility(View.VISIBLE);
                 showNextQuestion();
             }
         }else {
             if(!isTestCompleted) {
+                //previous_btn.setVisibility(View.VISIBLE);
                 showNextQuestion();
             }
         }
@@ -483,14 +492,11 @@ public class GuessMePlay extends AppCompatActivity {
         anim.playAnimation();
 
         _ok_btn.setOnClickListener(view -> {
-            if(score <= 7) {
-                failSound.stopSound();
-            }else {
-                happySound.stopSound();
-            }
+            failSound.stopSound();
+            happySound.stopSound();
+            currentItemNo = 0;
+            anim.cancelAnimation();
             testCompletedDialog.cancel();
-            // Save the score in shared preferences
-            //saveScoreToSharedPreferences(score);
             finish();
         });
 

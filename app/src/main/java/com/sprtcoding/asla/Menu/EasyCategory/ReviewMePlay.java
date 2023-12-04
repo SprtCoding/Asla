@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.EasyCategory;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -60,6 +62,10 @@ public class ReviewMePlay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review_me_play);
         init();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         clickSoundUtils = new ClickSoundUtils(this);
         nextLevelSoundUtils = new NextLevelSoundUtils(this);
@@ -166,7 +172,7 @@ public class ReviewMePlay extends AppCompatActivity {
 
         total_score.setText(String.valueOf(score));
 
-        if(score <= 7) {
+        if(score <= 14) {
             failSound.playSound();
             complete_card.setCardBackgroundColor(Color.rgb(191, 64, 64));
             header.setText("You Failed");

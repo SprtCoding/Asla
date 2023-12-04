@@ -8,10 +8,13 @@ import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import androidx.cardview.widget.CardView;
 
 import com.sprtcoding.asla.Menu.ModerateCategory.GuessMePlay;
 import com.sprtcoding.asla.Model.ModerateOptionsModel;
@@ -21,6 +24,7 @@ import com.sprtcoding.asla.R;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 
 public class OptionAdapter extends BaseAdapter {
     private Context context;
@@ -105,12 +109,23 @@ public class OptionAdapter extends BaseAdapter {
         LayoutInflater inflater = LayoutInflater.from(context);
         View dialogView = inflater.inflate(R.layout.enlarged_image_layout, null);
 
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) CardView close = dialogView.findViewById(R.id.close_btn);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ImageView enlargedImageView = dialogView.findViewById(R.id.enlargedImageView);
         enlargedImageView.setImageResource(imageIds[position]);
 
         builder.setView(dialogView);
         AlertDialog dialog = builder.create();
-        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        close.setOnClickListener(view -> dialog.dismiss());
+
+        // Set layout parameters for full screen
+        WindowManager.LayoutParams layoutParams = new WindowManager.LayoutParams();
+        layoutParams.copyFrom(Objects.requireNonNull(dialog.getWindow()).getAttributes());
+        layoutParams.width = WindowManager.LayoutParams.MATCH_PARENT;
+        layoutParams.height = WindowManager.LayoutParams.MATCH_PARENT;
+        dialog.getWindow().setAttributes(layoutParams);
+
+        Objects.requireNonNull(dialog.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.show();
     }
 

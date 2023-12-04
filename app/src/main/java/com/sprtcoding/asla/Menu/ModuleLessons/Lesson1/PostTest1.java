@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.ModuleLessons.Lesson1;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
@@ -58,6 +60,10 @@ public class PostTest1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post_test1);
         init();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         // Retrieve the score from SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("PreTestPrefs", MODE_PRIVATE);

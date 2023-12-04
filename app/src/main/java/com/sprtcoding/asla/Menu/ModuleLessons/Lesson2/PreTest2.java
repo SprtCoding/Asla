@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.ModuleLessons.Lesson2;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -59,6 +61,10 @@ public class PreTest2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_test2);
         init();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         clickSoundUtils = new ClickSoundUtils(this);
         nextLevelSoundUtils = new NextLevelSoundUtils(this);

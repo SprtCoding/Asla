@@ -26,9 +26,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/blanka"
-        android:textColor="@color/green"
-        android:textSize="28sp"
-        android:text="@string/how_to_play"/>
+        android:textColor="@color/white"
+        android:drawablePadding="10dp"
+        android:textSize="15sp"
+        android:text="@string/how_to_play"
+        app:drawableEndCompat="@drawable/question_18"
+        app:drawableTint="@color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"

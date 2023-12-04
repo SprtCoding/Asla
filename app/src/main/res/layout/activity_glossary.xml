@@ -21,6 +21,15 @@
         android:src="@drawable/arrowhead"
         android:id="@+id/back_btn"/>
 
+<!--    <androidx.appcompat.widget.SearchView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignTop="@id/back_btn"-->
+<!--        android:layout_alignBottom="@id/back_btn"-->
+<!--        app:searchIcon="@drawable/search"-->
+<!--        android:id="@+id/search_btn"/>-->
+
     <com.github.barteksc.pdfviewer.PDFView
         android:layout_below="@id/back_btn"
         android:layout_marginTop="20dp"

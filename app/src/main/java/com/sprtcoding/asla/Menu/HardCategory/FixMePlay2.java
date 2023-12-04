@@ -1,5 +1,7 @@
 package com.sprtcoding.asla.Menu.HardCategory;
 
+import static com.sprtcoding.asla.HomeActivity.musicService;
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -42,6 +44,10 @@ public class FixMePlay2 extends AppCompatActivity {
         setContentView(R.layout.activity_fix_me_play2);
         _init();
         setAnswer();
+
+        if (musicService != null) {
+            musicService.pauseMusic();
+        }
 
         loadingDialog = new LoadingDialog(this);
 
@@ -246,6 +252,7 @@ public class FixMePlay2 extends AppCompatActivity {
 
         ImageView output = correctDialog.findViewById(R.id.pic_output);
         MaterialButton nextBtn = correctDialog.findViewById(R.id.next_btn);
+        TextView labelTxt = correctDialog.findViewById(R.id.score_text);
 
         final AlertDialog correctDialogs = correctDialogBuilder.create();
 
@@ -253,6 +260,8 @@ public class FixMePlay2 extends AppCompatActivity {
         correctDialogs.setCanceledOnTouchOutside(false);
 
         output.setImageResource(R.drawable.radio_button);
+
+        labelTxt.setText("Congrats you debug the Radio Button!");
 
         nextBtn.setOnClickListener(view -> {
             Intent i = new Intent(this, FixMePlay2.class);
